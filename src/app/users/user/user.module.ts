@@ -13,10 +13,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { RecuperarPasswordComponent } from './recuperar-password/recuperar-password.component';
+import { FinalizarCompraComponent } from './finalizar-compra/finalizar-compra.component';
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    RecuperarPasswordComponent,
+    FinalizarCompraComponent
   ],
   imports: [
     CommonModule,

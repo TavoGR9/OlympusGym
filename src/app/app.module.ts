@@ -22,12 +22,18 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { MatMenuModule } from '@angular/material/menu';
 import { LoginComponent } from './users/user/login/login.component';
+import { HeaderComponent } from '../app/shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { RecuperarPasswordComponent } from './users/user/recuperar-password/recuperar-password.component';
 //librerias de rogelio termina
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent,
+    FooterComponent,
+    RecuperarPasswordComponent
   ],
   imports: [
     BrowserModule,
