@@ -1,0 +1,95 @@
+/**propiedades grid body padre**/
+.grid_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+/**propiedades contenedotr inputs**/
+.conten_inputs {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/**proíedades btn entrar**/
+.btn_int {
+    background: #FD9727;
+    width: 350px;
+    /**left: 125px;    **/
+    height: 50px;
+}
+
+/**propieades olvide mi contraseña**/
+.f_pass {
+    text-decoration: underline;
+}
+
+/**propiedades de los iconos google y facebook**/
+fa-icon {
+    font-size: xx-large;
+}
+
+/**propiedades texto dentro de btn ingresar**/
+.text_btn {
+    font-size: larger;
+}
+
+mat-form-field {
+    width: 350px;
+}
+
+/**propiedades text de olvide mi sontraseña**/
+.txt_a {
+    padding-right: 200px;
+    padding-top: 1px;
+}
+
+/**propiedades contenedor formulario, btn, txs**/
+.form_class {
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+/**porpiedades texto otras opciones**/
+.o_opciones {
+    padding-top: 30px;
+}
+
+/**propiedades btn redes sociales **/
+.btn_social {
+    margin: 10px;
+}
+
+/**propiedades titulo h1**/
+h1 {
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+/** propiedades img cuerpo **/
+.grid_body_h2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../../assets/images/index-img/img_login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/**propiedades img body**/
+.img_body {
+    max-width: 100%;
+    height: auto;
+}
+
+/** propiedades registrate**/
+strong {
+    color: #FD9727;
+    font-size: large;
+}

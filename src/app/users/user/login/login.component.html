@@ -1,0 +1,50 @@
+<!--Contenido login-->
+<div class="body">
+    
+    <div class="grid_body">
+        <div class="grid_body_h1">
+            <div class="conten_inputs">
+                <div class="form_class">
+                    <h1>Iniciar sesión.</h1>
+                <!--Inicio de formulario-->
+                <form [formGroup]="form" (ngSubmit)="ingresar()">
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Correo</mat-label>
+                        <input type="text" matInput placeholder="Correo" autocomplete="off" autofocus="" formControlName="email">
+                        <mat-icon matSuffix>alternate_email</mat-icon>
+                      </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field appearance="outline">
+                      <mat-label>Contraseña</mat-label>
+                      <input matInput  matInput [type]="hide ? 'password' : 'text'" placeholder="Contraseña" formControlName="password">
+                      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                      </button>
+                    </mat-form-field>
+                  </p>
+                  <p class="txt_a"><a class="f_pass" href="#">Olvide mi contraseña</a></p>
+                  <button type="submit" class="btn_int" mat-raised-button style="background: #FD9727; color: white;" [disabled]="form.invalid">
+                    <p class="text_btn">Ingresar</p></button>
+                </form>
+
+                <!--Opciones de acceso-->
+                  <p class="o_opciones">Otras opciones de acceso</p>
+                  <button class="btn_social" mat-fab color="warn">
+                    <fa-icon [icon]="['fab', 'google']"></fa-icon>
+                  </button>
+                  <button class="btn_social" mat-fab color="primary">
+                    <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
+                  </button>
+                  <p>¿Aún no tiene cuenta? <a href="#"><strong> Regístrate</strong></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="grid_body_h2">
+            <!--<img class="img_body" src="../../../assets/img/img_login.jpg" alt="imagen">
+            -->
+        </div>
+    </div>
+
+</div>
