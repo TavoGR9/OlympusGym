@@ -25,6 +25,7 @@ import { LoginComponent } from './users/user/login/login.component';
 import { HeaderComponent } from '../app/shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RecuperarPasswordComponent } from './users/user/recuperar-password/recuperar-password.component';
+import { AsistenciaComponent } from './users/admin/asistencia/asistencia.component';
 //librerias de rogelio termina
 
 @NgModule({
@@ -33,7 +34,8 @@ import { RecuperarPasswordComponent } from './users/user/recuperar-password/recu
     LoginComponent,
     HeaderComponent,
     FooterComponent,
-    RecuperarPasswordComponent
+    RecuperarPasswordComponent,
+    AsistenciaComponent
   ],
   imports: [
     BrowserModule,
@@ -46,20 +48,20 @@ import { RecuperarPasswordComponent } from './users/user/recuperar-password/recu
     MatButtonModule,
     FontAwesomeModule,
     ReactiveFormsModule,
-    MatTabsModule, 
-    MatExpansionModule, 
-    MatRadioModule, 
-    FormsModule, 
+    MatTabsModule,
+    MatExpansionModule,
+    MatRadioModule,
+    FormsModule,
     MatSelectModule,
     MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(
       faFacebook, faGoogle, faInstagram, faTwitter, faCircleUser, faCreditCard, faPaypal
-    ); 
+    );
   }
  }
