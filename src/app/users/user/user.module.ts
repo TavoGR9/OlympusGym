@@ -15,12 +15,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { RecuperarPasswordComponent } from './recuperar-password/recuperar-password.component';
 import { FinalizarCompraComponent } from './finalizar-compra/finalizar-compra.component';
+import { EntrenamientoPiernaComponent } from './entrenamiento-pierna/entrenamiento-pierna.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     RecuperarPasswordComponent,
-    FinalizarCompraComponent
+    FinalizarCompraComponent,
+    EntrenamientoPiernaComponent
   ],
   imports: [
     CommonModule,

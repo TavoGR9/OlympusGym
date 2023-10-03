@@ -26,6 +26,7 @@ import { HeaderComponent } from '../app/shared/components/header/header.componen
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RecuperarPasswordComponent } from './users/user/recuperar-password/recuperar-password.component';
 import { AsistenciaComponent } from './users/admin/asistencia/asistencia.component';
+import { EntrenamientoPiernaComponent } from './users/user/entrenamiento-pierna/entrenamiento-pierna.component';
 //librerias de rogelio termina
 
 @NgModule({
@@ -35,7 +36,8 @@ import { AsistenciaComponent } from './users/admin/asistencia/asistencia.compone
     HeaderComponent,
     FooterComponent,
     RecuperarPasswordComponent,
-    AsistenciaComponent
+    AsistenciaComponent,
+    EntrenamientoPiernaComponent
   ],
   imports: [
     BrowserModule,
