@@ -8,7 +8,7 @@ import { AsistenciaComponent } from './asistencia/asistencia.component';
 @NgModule({
   declarations: [
     AltaColaboradorComponent,
-    AsistenciaComponent
+    // AsistenciaComponent
   ],
   imports: [
     CommonModule

@@ -19,22 +19,26 @@ import { BrowserModule } from '@angular/platform-browser';
     FooterComponent,
     HeaderComponent
   ],
+  exports: [
+    FooterComponent,
+    HeaderComponent
+  ],
   imports: [
     CommonModule,
     BrowserModule,
     FontAwesomeModule,
     MatToolbarModule,
-    MatButtonModule, 
-    MatMenuModule, 
+    MatButtonModule,
+    MatMenuModule,
     MatIconModule
-    
+
   ]
 })
 
-export class SharedModule { 
+export class SharedModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(
       faFacebook, faGoogle, faInstagram, faTwitter, faCircleUser, faCreditCard, faPaypal
-    ); 
+    );
   }
 }

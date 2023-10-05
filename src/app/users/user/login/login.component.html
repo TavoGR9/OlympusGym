@@ -23,7 +23,7 @@
                       <mat-label>Contraseña</mat-label>
                       <input matInput  matInput [type]="hide ? 'password' : 'text'" placeholder="Contraseña" formControlName="password">
                       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        <!-- <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
                       </button>
                     </mat-form-field>
                   </p>
@@ -35,10 +35,10 @@
                 <!--Opciones de acceso-->
                   <p class="o_opciones">Otras opciones de acceso</p>
                   <button class="btn_social" mat-fab color="warn">
-                    <fa-icon [icon]="['fab', 'google']"></fa-icon>
+                    <!-- <fa-icon [icon]="['fab', 'google']"></fa-icon> -->
                   </button>
                   <button class="btn_social" mat-fab color="primary">
-                    <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
+                    <!-- <fa-icon [icon]="['fab', 'facebook']"></fa-icon> -->
                   </button>
                   <p>¿Aún no tiene cuenta? <a href="#"><strong> Regístrate</strong></a></p>
                 </div>

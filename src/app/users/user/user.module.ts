@@ -16,13 +16,17 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { RecuperarPasswordComponent } from './recuperar-password/recuperar-password.component';
 import { FinalizarCompraComponent } from './finalizar-compra/finalizar-compra.component';
 import { EntrenamientoPiernaComponent } from './entrenamiento-pierna/entrenamiento-pierna.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { CarouselsComponent } from './carousels/carousels.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     RecuperarPasswordComponent,
     FinalizarCompraComponent,
-    EntrenamientoPiernaComponent
+    EntrenamientoPiernaComponent,
+    AboutUsComponent,
+    CarouselsComponent
   ],
   imports: [
     CommonModule,
