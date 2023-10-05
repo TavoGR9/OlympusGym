@@ -28,6 +28,12 @@ import { RecuperarPasswordComponent } from './users/user/recuperar-password/recu
 import { AsistenciaComponent } from './users/admin/asistencia/asistencia.component';
 import { EntrenamientoPiernaComponent } from './users/user/entrenamiento-pierna/entrenamiento-pierna.component';
 //librerias de rogelio termina
+import { StarRatingComponent, RutinasEntrenadorComponent } from './users/trainer/rutinas-entrenador/rutinas-entrenador.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTableModule } from '@angular/material/table';
+
+//import { StarRatingComponent, RutinasEntrenadorComponent } from 'ruta/donde/estan/tus/componentes';  // Asegúrate de ajustar esta ruta
 
 @NgModule({
   declarations: [
@@ -37,10 +43,14 @@ import { EntrenamientoPiernaComponent } from './users/user/entrenamiento-pierna/
     FooterComponent,
     RecuperarPasswordComponent,
     AsistenciaComponent,
-    EntrenamientoPiernaComponent
+    EntrenamientoPiernaComponent,
+    RutinasEntrenadorComponent,
+    StarRatingComponent
   ],
   imports: [
+    MatTableModule,
     BrowserModule,
+    MatGridListModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatToolbarModule,
@@ -55,7 +65,8 @@ import { EntrenamientoPiernaComponent } from './users/user/entrenamiento-pierna/
     MatRadioModule,
     FormsModule,
     MatSelectModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
